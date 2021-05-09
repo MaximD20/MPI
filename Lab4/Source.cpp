@@ -133,3 +133,7 @@ int main(int argc, char* argv[])
 		printf("\n Result:");
 		PrintPolymon(resultsPolyM, ResultSize, ProcsRank[0], "Results");
 	}
+	MPI_Finalize();
+	delete[]m1, m2;
+	return 0;
+};
